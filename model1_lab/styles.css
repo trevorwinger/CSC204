@@ -1,0 +1,14 @@
+/*
+  CSC-204 Lab 1 CSS
+
+  TODO:
+  - Define base font and spacing
+  - Style the task list
+  - Visually indicate completed tasks
+  - Arrange controls clearly
+*/
+
+/* Example starting point */
+body {
+  font-family: system-ui, sans-serif;
+}
