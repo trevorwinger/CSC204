@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CSC-204 JavaScript Counter</title>
+    
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="card">
+        <h1>JavaScript Counter</h1>
+        <p id="counterText">Counter: 0</p>
+
+        <button id="addBtn">Add 1</button>
+        <button id="subBtn">Subtract 1</button>
+        <button id="doubleBtn">Double</button>
+      </div>
+    </div>
+
+    <script>
+      // DOM references
+      const counterText = document.getElementById("counterText");
+      const addBtn = document.getElementById("addBtn");
+      const subBtn = document.getElementById("subBtn");
+      const doubleBtn = document.getElementById("doubleBtn");
+
+      // State
+      let counter = 0;
+
+      // Function to update the display
+      function updateCounterText() {
+        counterText.textContent = "Counter: " + counter;
+      }
+
+      // Event handlers
+      addBtn.addEventListener("click", () => {
+        counter = counter + 1;
+        updateCounterText();
+      });
+
+      subBtn.addEventListener("click", () => {
+        counter = counter - 1;
+        updateCounterText();
+      });
+
+      doubleBtn.addEventListener("click", () => {
+        counter = counter * 2;
+        updateCounterText();
+      });
+    </script>
+  </body>
+</html>
